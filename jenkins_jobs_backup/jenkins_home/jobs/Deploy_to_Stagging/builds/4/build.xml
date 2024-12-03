@@ -1,0 +1,79 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>Artifact_Upload</upstreamProject>
+            <upstreamUrl>job/Artifact_Upload/</upstreamUrl>
+            <upstreamBuild>3</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>Sonar_Scanner</upstreamProject>
+                <upstreamUrl>job/Sonar_Scanner/</upstreamUrl>
+                <upstreamBuild>34</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.model.Cause_-UpstreamCause>
+                    <upstreamProject>IntergrationTest</upstreamProject>
+                    <upstreamUrl>job/IntergrationTest/</upstreamUrl>
+                    <upstreamBuild>7</upstreamBuild>
+                    <upstreamCauses>
+                      <hudson.model.Cause_-UpstreamCause>
+                        <upstreamProject>Test</upstreamProject>
+                        <upstreamUrl>job/Test/</upstreamUrl>
+                        <upstreamBuild>6</upstreamBuild>
+                        <upstreamCauses>
+                          <hudson.model.Cause_-UpstreamCause>
+                            <upstreamProject>Build</upstreamProject>
+                            <upstreamUrl>job/Build/</upstreamUrl>
+                            <upstreamBuild>11</upstreamBuild>
+                            <upstreamCauses>
+                              <hudson.model.Cause_-UserIdCause>
+                                <userId>admin</userId>
+                              </hudson.model.Cause_-UserIdCause>
+                            </upstreamCauses>
+                          </hudson.model.Cause_-UpstreamCause>
+                        </upstreamCauses>
+                      </hudson.model.Cause_-UpstreamCause>
+                    </upstreamCauses>
+                  </hudson.model.Cause_-UpstreamCause>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.21-458.vcf496cb_839e4">
+      <queuingDurationMillis>7522</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>1</buildableDurationMillis>
+      <waitingDurationMillis>7520</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <hudson.plugins.copyartifact.CopyArtifact_-EnvAction plugin="copyartifact@757.v05365583a_455"/>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>vprofile-v2.war</string>
+          <string>73df33333a874d9a462725aaa991d76e</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <queueId>72</queueId>
+  <timestamp>1733079588717</timestamp>
+  <startTime>1733079588722</startTime>
+  <result>FAILURE</result>
+  <duration>133636</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/Deploy_to_Stagging</workspace>
+  <hudsonVersion>2.479.2</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

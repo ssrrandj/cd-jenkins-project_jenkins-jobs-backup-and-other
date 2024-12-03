@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Build Pipeline Plugin
+Specification-Version: 2.0
+Implementation-Title: Build Pipeline Plugin
+Implementation-Version: 2.0.2
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: build-pipeline-plugin
+Short-Name: build-pipeline-plugin
+Long-Name: Build Pipeline Plugin
+Url: https://github.com/jenkinsci/build-pipeline-plugin
+Plugin-Version: 2.0.2
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: dashboard-view:2.487.vcf0ff9008a_c0;resolution:=opt
+ ional,jquery:1.7.2-1,matrix-auth:3.1.5,parameterized-trigger:2.45
+Plugin-Developers: Centrum Systems:centrum:plugins@centrumsystems.com.au
+ ,Dan Alvizu:dalvizu:alvizu@gmail.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://www.opensource.org/licenses/mit-license.php
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/build-pipelin
+ e-plugin.git
+Plugin-ScmTag: build-pipeline-plugin-2.0.2
+Plugin-ScmUrl: https://github.com/jenkinsci/build-pipeline-plugin
+Plugin-GitHash: c7febf0d11d1738ba8b5b2e87c48b1db20f3b83c
+Implementation-Build: c7febf0d11d1738ba8b5b2e87c48b1db20f3b83c
+

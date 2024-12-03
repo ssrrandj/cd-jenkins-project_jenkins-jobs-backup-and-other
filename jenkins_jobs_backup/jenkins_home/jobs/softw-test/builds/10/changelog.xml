@@ -1,0 +1,11 @@
+commit 147b05790072a6b39de3526e4221fdadc1fadfaf
+tree 4ba0ea194b0e08622b6197fe7c68eb1a4e5c85f4
+parent b01b0d549e9ab49556aedf7a66f3ece9949b9f70
+author ssrrandj <36181778+ssrrandj@users.noreply.github.com> 2024-12-03 13:42:34 +0530
+committer GitHub <noreply@github.com> 2024-12-03 13:42:34 +0530
+
+    Update pom.xml
+    
+    Org.apache.comms.io - pluggins added
+
+:100644 100644 1e0fc6245a4406f58b4f4233680dab09b8cc2f13 98ec9823d8636f08f8ec6b9cfd93a71ce2ebef01 M	pom.xml

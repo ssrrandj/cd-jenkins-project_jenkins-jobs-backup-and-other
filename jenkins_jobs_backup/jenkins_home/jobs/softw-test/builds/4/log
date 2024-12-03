@@ -1,0 +1,85 @@
+Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4ElMihwaK2FtudSbesRzSPz9u/BSolYWKf+2zKVq/gVTAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZe/eT83ILSktQi/fLMPAB7LlwSwgAAAA==[0mwin in workspace C:\jenkins\workspace\softw-test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir C:\jenkins\workspace\softw-test\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ssrrandj/vprofile-project.git # timeout=10
+Fetching upstream changes from https://github.com/ssrrandj/vprofile-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.1.windows.1'
+ > git fetch --tags --force --progress -- https://github.com/ssrrandj/vprofile-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse "refs/remotes/origin/seleniumSuite^{commit}" # timeout=10
+Checking out Revision bbf2fa88a71d21964231ec55cb584475240503ef (refs/remotes/origin/seleniumSuite)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bbf2fa88a71d21964231ec55cb584475240503ef # timeout=10
+Commit message: "chrome driver version 104"
+ > git rev-list --no-walk bbf2fa88a71d21964231ec55cb584475240503ef # timeout=10
+[softw-test] $ cmd /c call C:\Users\ADMINI~1\AppData\Local\Temp\2\jenkins8461328614708466000.bat
+
+C:\jenkins\workspace\softw-test>echo package DevOPS.devOPS;  1>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo public class Variables {  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String URL ="http://172.31.4.165:8080/vproapp/login";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String UserName ="admin_vp";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String Password ="admin_vp";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String ScreenShotPath ="C:\\jenkins\\screenshots";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo } 1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>exit 0 
+[softw-test] $ cmd.exe /C "C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\bin\mvn.cmd test -Dsurefire.suitXmlFiles=testing.xml && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[8mha:////4DmSatGF3+5HVJU+93UABZ7IhcTQGBAxeF2QdsidmOtnAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4DmSatGF3+5HVJU+93UABZ7IhcTQGBAxeF2QdsidmOtnAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] Some problems were encountered while building the effective model for DevOPS:devOPS:jar:0.0.1-SNAPSHOT
+[8mha:////4DmSatGF3+5HVJU+93UABZ7IhcTQGBAxeF2QdsidmOtnAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 129, column 19
+[8mha:////4DmSatGF3+5HVJU+93UABZ7IhcTQGBAxeF2QdsidmOtnAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4DmSatGF3+5HVJU+93UABZ7IhcTQGBAxeF2QdsidmOtnAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4DmSatGF3+5HVJU+93UABZ7IhcTQGBAxeF2QdsidmOtnAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4DmSatGF3+5HVJU+93UABZ7IhcTQGBAxeF2QdsidmOtnAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4DmSatGF3+5HVJU+93UABZ7IhcTQGBAxeF2QdsidmOtnAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[INFO] 
+[INFO] ---------------------------< DevOPS:devOPS >----------------------------
+[INFO] Building devOPS 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ devOPS ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\jenkins\workspace\softw-test\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ devOPS ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\jenkins\workspace\softw-test\target\classes
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ devOPS ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\jenkins\workspace\softw-test\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ devOPS ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to C:\jenkins\workspace\softw-test\target\test-classes
+[INFO] 
+[INFO] --- surefire:2.20.1:test (default-test) @ devOPS ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.489 s
+[INFO] Finished at: 2024-12-01T21:43:40Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project devOPS: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test failed: Cannot invoke "org.apache.maven.surefire.shade.org.apache.commons.lang3.JavaVersion.atLeast(org.apache.maven.surefire.shade.org.apache.commons.lang3.JavaVersion)" because "org.apache.maven.surefire.shade.org.apache.commons.lang3.SystemUtils.JAVA_SPECIFICATION_VERSION_AS_ENUM" is null -> [Help 1]
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Slack Notifications] found #3 as previous completed, non-aborted build
+[Slack Notifications] will send OnEveryFailureNotification because build matches and user preferences allow it
+Finished: FAILURE

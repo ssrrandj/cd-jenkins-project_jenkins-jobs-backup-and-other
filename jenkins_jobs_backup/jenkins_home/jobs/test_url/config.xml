@@ -1,0 +1,47 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>sleep 60</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+    <jenkins.plugins.http__request.HttpRequest plugin="http_request@1.19">
+      <url>http://54.189.2.205:8080/vproapp/login</url>
+      <ignoreSslErrors>false</ignoreSslErrors>
+      <httpMode>GET</httpMode>
+      <httpProxy></httpProxy>
+      <proxyAuthentication></proxyAuthentication>
+      <passBuildParameters>false</passBuildParameters>
+      <validResponseCodes>100:399</validResponseCodes>
+      <validResponseContent></validResponseContent>
+      <acceptType>NOT_SET</acceptType>
+      <contentType>NOT_SET</contentType>
+      <outputFile></outputFile>
+      <timeout>0</timeout>
+      <consoleLogResponseBody>false</consoleLogResponseBody>
+      <quiet>false</quiet>
+      <authentication></authentication>
+      <requestBody></requestBody>
+      <uploadFile></uploadFile>
+      <multipartName></multipartName>
+      <wrapAsMultipart>false</wrapAsMultipart>
+      <useSystemProperties>false</useSystemProperties>
+      <useNtlm>false</useNtlm>
+      <customHeaders class="empty-list"/>
+      <formData class="empty-list"/>
+    </jenkins.plugins.http__request.HttpRequest>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

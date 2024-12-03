@@ -1,0 +1,82 @@
+Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4ElMihwaK2FtudSbesRzSPz9u/BSolYWKf+2zKVq/gVTAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZe/eT83ILSktQi/fLMPAB7LlwSwgAAAA==[0mwin in workspace C:\jenkins\workspace\softw-test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir C:\jenkins\workspace\softw-test\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ssrrandj/vprofile-project.git # timeout=10
+Fetching upstream changes from https://github.com/ssrrandj/vprofile-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.1.windows.1'
+ > git fetch --tags --force --progress -- https://github.com/ssrrandj/vprofile-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse "refs/remotes/origin/seleniumSuite^{commit}" # timeout=10
+Checking out Revision 48404db621acc54bdef4f65e9159469a435b2bea (refs/remotes/origin/seleniumSuite)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 48404db621acc54bdef4f65e9159469a435b2bea # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 48404db621acc54bdef4f65e9159469a435b2bea # timeout=10
+[softw-test] $ cmd /c call C:\Users\ADMINI~1\AppData\Local\Temp\2\jenkins651868949312982272.bat
+
+C:\jenkins\workspace\softw-test>echo package DevOPS.devOPS;  1>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo public class Variables {  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String URL ="http://172.31.4.165:8080/vproapp/login";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String UserName ="admin_vp";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String Password ="admin_vp";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String ScreenShotPath ="C:\\jenkins\\screenshots";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo } 1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>exit 0 
+[softw-test] $ sh -xe C:\Users\ADMINI~1\AppData\Local\Temp\2\jenkins8419799825391866629.sh
+The system cannot find the file specified
+FATAL: command execution failed
+java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:499)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+Also:   hudson.remoting.Channel$CallSiteStackTrace: Remote call to win
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1923)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:384)
+		at hudson.remoting.Channel.call(Channel.java:1112)
+		at hudson.Launcher$RemoteLauncher.launch(Launcher.java:1121)
+		at hudson.Launcher$ProcStarter.start(Launcher.java:506)
+		at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:144)
+		at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:92)
+		at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+		at hudson.model.Build$BuildExecution.build(Build.java:199)
+		at hudson.model.Build$BuildExecution.doRun(Build.java:164)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:527)
+		at hudson.model.Run.execute(Run.java:1831)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+		at hudson.model.ResourceController.execute(ResourceController.java:101)
+		at hudson.model.Executor.run(Executor.java:445)
+Caused: java.io.IOException: Cannot run program "sh" (in directory "C:\jenkins\workspace\softw-test"): CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at Jenkins v2.479.2//hudson.Proc$LocalProc.<init>(Proc.java:252)
+	at Jenkins v2.479.2//hudson.Proc$LocalProc.<init>(Proc.java:221)
+	at Jenkins v2.479.2//hudson.Launcher$LocalLauncher.launch(Launcher.java:994)
+	at Jenkins v2.479.2//hudson.Launcher$ProcStarter.start(Launcher.java:506)
+	at Jenkins v2.479.2//hudson.Launcher$RemoteLaunchCallable.call(Launcher.java:1395)
+	at Jenkins v2.479.2//hudson.Launcher$RemoteLaunchCallable.call(Launcher.java:1337)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:225)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:50)
+	at hudson.remoting.Request$2.run(Request.java:391)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:81)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:140)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Build step 'Execute shell' marked build as failure
+[Slack Notifications] found #23 as previous completed, non-aborted build
+[Slack Notifications] will send OnEveryFailureNotification because build matches and user preferences allow it
+Finished: FAILURE

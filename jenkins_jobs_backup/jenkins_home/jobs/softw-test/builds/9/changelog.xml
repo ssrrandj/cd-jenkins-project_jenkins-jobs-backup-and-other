@@ -1,0 +1,11 @@
+commit b01b0d549e9ab49556aedf7a66f3ece9949b9f70
+tree fa56cce8050c4f27b5959296f92fa27446294060
+parent e317cbae1a5062d2a0f08a97e67a50b4ea1fa013
+author ssrrandj <36181778+ssrrandj@users.noreply.github.com> 2024-12-03 13:32:08 +0530
+committer GitHub <noreply@github.com> 2024-12-03 13:32:08 +0530
+
+    Update pom.xml
+    
+    Seleniums browser version and commented plugin with old org.apache.maven pluggin 2.20.0
+
+:100644 100644 344e6577c105cef23a887506790c6565658cba10 1e0fc6245a4406f58b4f4233680dab09b8cc2f13 M	pom.xml

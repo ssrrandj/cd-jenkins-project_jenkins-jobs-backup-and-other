@@ -1,0 +1,23 @@
+Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Build
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ssrrandj/vprofile-project.git
+ > git init /var/jenkins_home/workspace/Build # timeout=10
+Fetching upstream changes from https://github.com/ssrrandj/vprofile-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/ssrrandj/vprofile-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ssrrandj/vprofile-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/ci-jenkins^{commit} # timeout=10
+Checking out Revision f690912106eb5c9581964c1daae1b60d960e9ffd (refs/remotes/origin/ci-jenkins)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f690912106eb5c9581964c1daae1b60d960e9ffd # timeout=10
+Commit message: "Update nexus-setup.sh"
+First time build. Skipping changelog.
+[Slack Notifications] will send OnSuccessNotification because build matches and user preferences allow it
+Finished: SUCCESS

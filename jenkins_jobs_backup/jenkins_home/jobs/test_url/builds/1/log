@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:////4Pg5Q7l9+Ehq+o640nE8+6t2mryOOLpthI9MnD3szvbcAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/az8JH2X1IKc/Mr4kvz44JLE9HSgSfoA68zfF80AAAA=[0mDeploy_to_Stagging" build number [8mha:////4Ahypp2TU58tOhIPyQlfBjn88+7PzEwYD56xJk+qaHcNAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkn9rPwkfZfUgpz8yviS/PjgksT0dKBJ+mYA1t6q7s4AAAA=[0m6
+originally caused by:
+ Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/test_url
+[test_url] $ /bin/sh -xe /tmp/jenkins6798955516276553069.sh
++ sleep 60
+HttpMethod: GET
+URL: http://54.189.2.205:8080
+Sending request to url: http://54.189.2.205:8080
+Response Code: HTTP/1.1 200 
+Success: Status code 200 is in the accepted range: 100:399
+Finished: SUCCESS

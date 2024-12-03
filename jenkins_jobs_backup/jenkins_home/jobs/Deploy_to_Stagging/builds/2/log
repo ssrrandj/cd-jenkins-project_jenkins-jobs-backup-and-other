@@ -1,0 +1,70 @@
+Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Deploy_to_Stagging
+Copied 1 artifact from "[8mha:////4NJ/kPnD4eSU9wD5m4Qn3ZAiszvVgenCuZUJSWaSbPXkAAAAjB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgLWHg1s/KT9J3Ks3MSdEHAAe++oiQAAAA[0mBuild" build number [8mha:////4K225bVRd+6EE4IHYAUahL2c+3aeoVO1tQN2t+1hkEyyAAAAjR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMQoYeDVz8pP0ncqzcxJ0TfTBwAcUkaLkgAAAA==[0m6
+[DeployPublisher][INFO] Attempting to deploy 1 war file(s)
+[DeployPublisher][INFO] Deploying /var/jenkins_home/workspace/Deploy_to_Stagging/target/vprofile-v2.war to container Tomcat 9.x Remote with context null
+ERROR: Build step failed with exception
+org.codehaus.cargo.container.ContainerException: Failed to redeploy [/var/jenkins_home/workspace/Deploy_to_Stagging/target/vprofile-v2.war]
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:176)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:81)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:167)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:136)
+	at hudson.FilePath.act(FilePath.java:1234)
+	at hudson.FilePath.act(FilePath.java:1217)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.CargoContainerAdapter.redeployFile(CargoContainerAdapter.java:133)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.PasswordProtectedAdapterCargo.redeployFile(PasswordProtectedAdapterCargo.java:95)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:113)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:47)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:767)
+	at hudson.model.Build$BuildExecution.post2(Build.java:179)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:711)
+	at hudson.model.Run.execute(Run.java:1854)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:445)
+Caused by: org.codehaus.cargo.container.tomcat.internal.TomcatManagerException: The username and password you provided are not correct (error 401)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:704)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:882)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:895)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:161)
+	... 19 more
+Caused by: java.io.IOException: Server returned HTTP response code: 401 for URL: http://18.246.71.94:8080/manager/text/list
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:577)
+	... 22 more
+org.codehaus.cargo.container.tomcat.internal.TomcatManagerException: The username and password you provided are not correct (error 401)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:704)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:882)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:895)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:161)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:81)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:167)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:136)
+	at hudson.FilePath.act(FilePath.java:1234)
+	at hudson.FilePath.act(FilePath.java:1217)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.CargoContainerAdapter.redeployFile(CargoContainerAdapter.java:133)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.PasswordProtectedAdapterCargo.redeployFile(PasswordProtectedAdapterCargo.java:95)
+	at PluginClassLoader for deploy//hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:113)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:47)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:767)
+	at hudson.model.Build$BuildExecution.post2(Build.java:179)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:711)
+	at hudson.model.Run.execute(Run.java:1854)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:445)
+Caused by: java.io.IOException: Server returned HTTP response code: 401 for URL: http://18.246.71.94:8080/manager/text/list
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at PluginClassLoader for deploy//org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:577)
+	... 22 more
+Build step 'Deploy war/ear to a container' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,44 @@
+Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/IntergrationTest
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ssrrandj/vprofile-project.git
+ > git init /var/jenkins_home/workspace/IntergrationTest # timeout=10
+Fetching upstream changes from https://github.com/ssrrandj/vprofile-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/ssrrandj/vprofile-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ssrrandj/vprofile-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/ci-jenkins^{commit} # timeout=10
+Checking out Revision f690912106eb5c9581964c1daae1b60d960e9ffd (refs/remotes/origin/ci-jenkins)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f690912106eb5c9581964c1daae1b60d960e9ffd # timeout=10
+Commit message: "Update nexus-setup.sh"
+First time build. Skipping changelog.
+[IntergrationTest] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/my-maven/bin/mvn -s /var/jenkins_home/workspace/IntergrationTest/settings.xml -DSNAP-REPO=vprofile-snapshot -DNEXUS-PASS=admin -DNEXUSIP=172.31.1.30 -DNEXUSPORT=8081 -DRELEASE-REPO=vprofile_host_repo -DNEXUS-USER=admin -DCENTRAL-REPO=vprofile_cntrl_repo -DNEXUS-GRP-REPO=vprofile_grp_repo verifiy -DSkipUnitTest
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.visualpathit:vprofile >----------------------
+[INFO] Building Visualpathit VProfile Webapp v2
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.133 s
+[INFO] Finished at: 2024-11-29T19:16:14Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Unknown lifecycle phase "verifiy". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: pre-clean, clean, post-clean, validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-site, site, post-site, site-deploy. -> [Help 1]
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Slack Notifications] will send OnEveryFailureNotification because build matches and user preferences allow it
+Finished: FAILURE

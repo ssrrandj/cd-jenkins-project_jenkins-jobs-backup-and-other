@@ -1,0 +1,27 @@
+Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Build
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Build/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ssrrandj/vprofile-project.git # timeout=10
+Fetching upstream changes from https://github.com/ssrrandj/vprofile-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/ssrrandj/vprofile-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/cd-jenkins^{commit} # timeout=10
+Checking out Revision e1b6607f0d0b58f300269e1fb05044ee1d3bc3af (refs/remotes/origin/cd-jenkins)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e1b6607f0d0b58f300269e1fb05044ee1d3bc3af # timeout=10
+Commit message: "Update settings.xml"
+ > git rev-list --no-walk e1b6607f0d0b58f300269e1fb05044ee1d3bc3af # timeout=10
+[Build] $ /bin/sh -xe /tmp/jenkins16349107088987832199.sh
++ sleep 60
+[Build] $ /bin/sh -xe /tmp/jenkins4435239729980405202.sh
+/tmp/jenkins4435239729980405202.sh: 2: cannot create src/main/resources/application/properties: Directory nonexistent
+Build step 'Execute shell' marked build as failure
+Archiving artifacts
+[Slack Notifications] found #9 as previous completed, non-aborted build
+[Slack Notifications] will send OnEveryFailureNotification because build matches and user preferences allow it
+Finished: FAILURE

@@ -1,0 +1,1085 @@
+Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4ElMihwaK2FtudSbesRzSPz9u/BSolYWKf+2zKVq/gVTAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZe/eT83ILSktQi/fLMPAB7LlwSwgAAAA==[0mwin in workspace C:\jenkins\workspace\softw-test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir C:\jenkins\workspace\softw-test\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ssrrandj/vprofile-project.git # timeout=10
+Fetching upstream changes from https://github.com/ssrrandj/vprofile-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.1.windows.1'
+ > git fetch --tags --force --progress -- https://github.com/ssrrandj/vprofile-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse "refs/remotes/origin/seleniumSuite^{commit}" # timeout=10
+Checking out Revision 954f1471e29b1cdcefc53a6a31447d04cdb9be4c (refs/remotes/origin/seleniumSuite)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 954f1471e29b1cdcefc53a6a31447d04cdb9be4c # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk ad6f4bbda8a079810c7afa67e35d0ca8c53b4579 # timeout=10
+[softw-test] $ cmd /c call C:\Users\ADMINI~1\AppData\Local\Temp\2\jenkins3827968087149580550.bat
+
+C:\jenkins\workspace\softw-test>echo package DevOPS.devOPS;  1>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo public class Variables {  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String URL ="http://172.31.4.165:8080/vproapp/login";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String UserName ="admin_vp";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String Password ="admin_vp";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo 	public static final String ScreenShotPath ="C:\\jenkins\\screenshots";  1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>echo } 1>>src\test\java\DevOPS\devOPS\Variables.java 
+
+C:\jenkins\workspace\softw-test>exit 0 
+[softw-test] $ cmd.exe /C "C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\bin\mvn.cmd -DSNAP-REPO=vprofile-snapshot -DNEXUS-PASS=admin -DNEXUSIP=172.31.1.30 -DNEXUSPORT=8081 -DRELEASE-REPO=vprofile_host_repo -DNEXUS-USER=admin -DCENTRAL-REPO=vprofile_cntrl_repo -DNEXUS-GRP-REPO=vprofile_grp_repo clean test -Dsurefire.suitXmlFiles=testing.xml -X -U && exit %%ERRORLEVEL%%"
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven
+Java version: 17.0.13, vendor: Eclipse Adoptium, runtime: C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows server 2022", version: "10.0", arch: "amd64", family: "windows"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.util < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gav, file-hgav, file-static, gav, static]
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\Administrator\.m2\settings.xml
+[DEBUG] Reading global toolchains from C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\conf\toolchains.xml
+[DEBUG] Reading user toolchains from C:\Users\Administrator\.m2\toolchains.xml
+[DEBUG] Using local repository at C:\Users\Administrator\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\Administrator\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project DevOPS:devOPS:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: DevOPS:devOPS:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [clean, test]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ---------------------------< DevOPS:devOPS >----------------------------
+[INFO] Building devOPS 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Creating adapter using nameMapper 'gav' and factory 'rwlock-local'
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       DevOPS:devOPS:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${maven.clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${maven.clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.build.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${maven.clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${maven.clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.0.2:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.6">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.6">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.0.2:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.6">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.6">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <enableProcessChecker>${surefire.enableProcessChecker}</enableProcessChecker>
+  <encoding default-value="${project.reporting.outputEncoding}">${surefire.encoding}</encoding>
+  <excludedEnvironmentVariables>${surefire.excludedEnvironmentVariables}</excludedEnvironmentVariables>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkCount default-value="1">${forkCount}</forkCount>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkNode>${surefire.forkNode}</forkNode>
+  <forkedProcessExitTimeoutInSeconds default-value="30">${surefire.exitTimeout}</forkedProcessExitTimeoutInSeconds>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}"/>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <projectBuildDirectory default-value="${project.build.directory}"/>
+  <projectRemoteRepositories default-value="${project.remoteArtifactRepositories}"/>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <session default-value="${session}"/>
+  <shutdown default-value="exit">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <suiteXmlFiles>
+    <suiteXmlFile>testng.xml</suiteXmlFile>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <systemPropertiesFile>${surefire.systemPropertiesFile}</systemPropertiesFile>
+  <tempDir default-value="surefire">${tempDir}</tempDir>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useModulePath default-value="true">${surefire.useModulePath}</useModulePath>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for sonatype-nexus-snapshots (http://oss.sonatype.org/content/repositories/snapshots).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=12415200, ConflictMarker.markTime=1458800, ConflictMarker.nodeCount=285, ConflictIdSorter.graphTime=3992600, ConflictIdSorter.topsortTime=1722800, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=31422200, ConflictResolver.conflictItemCount=245, DfDependencyCollector.collectTime=2883163400, DfDependencyCollector.transformTime=56431900}
+[DEBUG] DevOPS:devOPS:jar:0.0.1-SNAPSHOT
+[DEBUG]    junit:junit:jar:4.11:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
+[DEBUG]    org.seleniumhq.selenium:selenium-java:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-api:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-chrome-driver:jar:4.9.0:compile
+[DEBUG]          com.google.auto.service:auto-service-annotations:jar:1.0.1:compile
+[DEBUG]          com.google.auto.service:auto-service:jar:1.0.1:compile
+[DEBUG]             com.google.auto:auto-common:jar:1.2:compile
+[DEBUG]          com.google.guava:guava:jar:31.1-jre:compile
+[DEBUG]             com.google.guava:failureaccess:jar:1.0.1:compile
+[DEBUG]             com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[DEBUG]             com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[DEBUG]             org.checkerframework:checker-qual:jar:3.12.0:compile
+[DEBUG]             com.google.errorprone:error_prone_annotations:jar:2.11.0:compile
+[DEBUG]             com.google.j2objc:j2objc-annotations:jar:1.3:compile
+[DEBUG]          org.seleniumhq.selenium:selenium-chromium-driver:jar:4.9.0:compile
+[DEBUG]          org.seleniumhq.selenium:selenium-json:jar:4.9.0:compile
+[DEBUG]          org.seleniumhq.selenium:selenium-manager:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-devtools-v110:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-devtools-v111:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-devtools-v112:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-devtools-v85:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-edge-driver:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-firefox-driver:jar:4.9.0:compile
+[DEBUG]          org.seleniumhq.selenium:selenium-http:jar:4.9.0:compile
+[DEBUG]             dev.failsafe:failsafe:jar:3.3.1:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-ie-driver:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-remote-driver:jar:4.9.0:compile
+[DEBUG]          io.netty:netty-buffer:jar:4.1.91.Final:compile
+[DEBUG]          io.netty:netty-codec-http:jar:4.1.91.Final:compile
+[DEBUG]             io.netty:netty-codec:jar:4.1.91.Final:compile
+[DEBUG]             io.netty:netty-handler:jar:4.1.91.Final:compile
+[DEBUG]          io.netty:netty-common:jar:4.1.91.Final:compile
+[DEBUG]          io.netty:netty-transport-classes-epoll:jar:4.1.91.Final:compile
+[DEBUG]          io.netty:netty-transport-classes-kqueue:jar:4.1.91.Final:compile
+[DEBUG]          io.netty:netty-transport-native-epoll:jar:4.1.91.Final:linux-x86_64
+[DEBUG]          io.netty:netty-transport-native-kqueue:jar:4.1.91.Final:osx-x86_64
+[DEBUG]          io.netty:netty-transport-native-unix-common:jar:4.1.91.Final:compile
+[DEBUG]          io.netty:netty-transport:jar:4.1.91.Final:compile
+[DEBUG]             io.netty:netty-resolver:jar:4.1.91.Final:compile
+[DEBUG]          io.opentelemetry:opentelemetry-api:jar:1.25.0:compile
+[DEBUG]          io.opentelemetry:opentelemetry-context:jar:1.25.0:compile
+[DEBUG]          io.opentelemetry:opentelemetry-exporter-logging:jar:1.25.0:compile
+[DEBUG]             io.opentelemetry:opentelemetry-sdk-metrics:jar:1.25.0:compile
+[DEBUG]             io.opentelemetry:opentelemetry-sdk-logs:jar:1.25.0-alpha:compile
+[DEBUG]                io.opentelemetry:opentelemetry-api-logs:jar:1.25.0-alpha:compile
+[DEBUG]                io.opentelemetry:opentelemetry-api-events:jar:1.25.0-alpha:compile
+[DEBUG]          io.opentelemetry:opentelemetry-sdk-common:jar:1.25.0:compile
+[DEBUG]          io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:jar:1.25.0:compile
+[DEBUG]          io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:jar:1.25.0-alpha:compile
+[DEBUG]          io.opentelemetry:opentelemetry-sdk-trace:jar:1.25.0:compile
+[DEBUG]          io.opentelemetry:opentelemetry-sdk:jar:1.25.0:compile
+[DEBUG]          io.opentelemetry:opentelemetry-semconv:jar:1.25.0-alpha:compile
+[DEBUG]          io.ous:jtoml:jar:2.0.0:compile
+[DEBUG]          net.bytebuddy:byte-buddy:jar:1.14.4:compile
+[DEBUG]          org.apache.commons:commons-exec:jar:1.3:compile
+[DEBUG]          org.asynchttpclient:async-http-client:jar:2.12.3:compile
+[DEBUG]             org.asynchttpclient:async-http-client-netty-utils:jar:2.12.3:compile
+[DEBUG]             io.netty:netty-codec-socks:jar:4.1.60.Final:compile
+[DEBUG]             io.netty:netty-handler-proxy:jar:4.1.60.Final:compile
+[DEBUG]             io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.60.Final:compile
+[DEBUG]             io.netty:netty-transport-native-kqueue:jar:osx-x86_64:4.1.60.Final:compile
+[DEBUG]             org.reactivestreams:reactive-streams:jar:1.0.3:compile
+[DEBUG]             com.typesafe.netty:netty-reactive-streams:jar:2.0.4:compile
+[DEBUG]             org.slf4j:slf4j-api:jar:1.7.30:compile
+[DEBUG]             com.sun.activation:jakarta.activation:jar:1.2.2:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-safari-driver:jar:4.9.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-support:jar:4.9.0:compile
+[DEBUG]    org.testng:testng:jar:6.14.3:test
+[DEBUG]       org.apache-extras.beanshell:bsh:jar:2.0b6:test
+[DEBUG]    org.uncommons:reportng:jar:1.1.2:test
+[DEBUG]       velocity:velocity:jar:1.4:test
+[DEBUG]          velocity:velocity-dep:jar:1.4:test
+[DEBUG]    com.beust:jcommander:jar:1.27:compile
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ devOPS ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=135800, ConflictMarker.markTime=42400, ConflictMarker.nodeCount=14, ConflictIdSorter.graphTime=151200, ConflictIdSorter.topsortTime=27400, ConflictIdSorter.conflictIdCount=12, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2107500, ConflictResolver.conflictItemCount=14, DfDependencyCollector.collectTime=311408900, DfDependencyCollector.transformTime=2665200}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:3.1.0
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile (version managed from default)
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.1.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.1.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.1.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:3.1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:3.1.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean:default-clean' with basic configurator -->
+[DEBUG]   (f) directory = C:\jenkins\workspace\softw-test\target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = C:\jenkins\workspace\softw-test\target\classes
+[DEBUG]   (f) reportDirectory = C:\jenkins\workspace\softw-test\target\classes
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = C:\jenkins\workspace\softw-test\target\test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting C:\jenkins\workspace\softw-test\target
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\test-classes\DevOPS\devOPS\VProfile_TestSuite.class
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\test-classes\DevOPS\devOPS\vprofileHomePageVerification.class
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\test-classes\DevOPS\devOPS\vprofileHomePagePO.class
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\test-classes\DevOPS\devOPS\Variables.class
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\test-classes\DevOPS\devOPS\baseDriver.class
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\test-classes\DevOPS\devOPS\AppTest.class
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\test-classes\DevOPS\devOPS
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\test-classes\DevOPS
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\test-classes
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\TestSuite.txt
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\testng.css
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\testng-results.xml
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\testng-reports.js
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\testng-reports.css
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\testng-failed.xml
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\TEST-TestSuite.xml
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\skipped.png
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\passed.png
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\index.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\toc.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\testng.xml.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\reporter-output.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\PrincipleTestSuite.properties
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\methods.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\methods-not-run.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\methods-alphabetical.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\main.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\index.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\groups.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST\classes.html
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\surefire-reports\old\CI_CD_TEST
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\surefire-reports\old
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\navigator-bullet.png
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\junitreports\TEST-DevOPS.devOPS.VProfile_TestSuite.xml
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\surefire-reports\junitreports
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\jquery-1.7.1.min.js
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\index.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\failed.png
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\emailable-report.html
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\collapseall.gif
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\CI_CD_TEST\testng-failed.xml
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\CI_CD_TEST\PrincipleTestSuite.xml
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\CI_CD_TEST\PrincipleTestSuite.html
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\surefire-reports\CI_CD_TEST
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\surefire-reports\bullet_point.png
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\surefire-reports
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin\testCompile
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin\compile\default-compile
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin\compile
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\maven-status\maven-compiler-plugin
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\maven-status
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\maven-archiver\pom.properties
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\maven-archiver
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\generated-test-sources\test-annotations
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\generated-test-sources
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\generated-sources\annotations
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\generated-sources
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\devOPS-0.0.1-SNAPSHOT.jar
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\classes\META-INF\maven\DevOPS\devOPS\pom.xml
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\classes\META-INF\maven\DevOPS\devOPS\pom.properties
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\classes\META-INF\maven\DevOPS\devOPS
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\classes\META-INF\maven\DevOPS
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\classes\META-INF\maven
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\classes\META-INF\MANIFEST.MF
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\classes\META-INF
+[INFO] Deleting file C:\jenkins\workspace\softw-test\target\classes\DevOPS\devOPS\App.class
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\classes\DevOPS\devOPS
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\classes\DevOPS
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target\classes
+[INFO] Deleting directory C:\jenkins\workspace\softw-test\target
+[DEBUG] Skipping non-existing directory C:\jenkins\workspace\softw-test\target\classes
+[DEBUG] Skipping non-existing directory C:\jenkins\workspace\softw-test\target\test-classes
+[DEBUG] Skipping non-existing directory C:\jenkins\workspace\softw-test\target\classes
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ devOPS ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=475500, ConflictMarker.markTime=89300, ConflictMarker.nodeCount=68, ConflictIdSorter.graphTime=87600, ConflictIdSorter.topsortTime=40500, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3642600, ConflictResolver.conflictItemCount=67, DfDependencyCollector.collectTime=642857400, DfDependencyCollector.transformTime=4376000}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.0.2
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.6:compile (version managed from default)
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.24:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.1.1:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.0.0:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.24:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.0.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.6
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.24
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.1.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.0.0
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.24
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.0.2:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.0.2:resources:default-resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\jenkins\workspace\softw-test\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: DevOPS:devOPS:0.0.1-SNAPSHOT @ C:\jenkins\workspace\softw-test\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\jenkins\workspace\softw-test\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@71926a36
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {env.NUMBER_OF_PROCESSORS=2, env.USERPROFILE=C:\Users\Administrator, env.CLIENTNAME=DESKTOP-3GU3EQR, java.specification.version=17, sun.cpu.isalist=amd64, env.EXECUTOR_NUMBER=0, sun.arch.data.model=64, env.PROGRAMW6432=C:\Program Files, java.vendor.url=https://adoptium.net/, env.JENKINS_HOME=/var/jenkins_home, NEXUS-USER=admin, env.OS=Windows_NT, env.JOB_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/display/redirect, sun.boot.library.path=C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -DSNAP-REPO=vprofile-snapshot -DNEXUS-PASS=admin -DNEXUSIP=172.31.1.30 -DNEXUSPORT=8081 -DRELEASE-REPO=vprofile_host_repo -DNEXUS-USER=admin -DCENTRAL-REPO=vprofile_cntrl_repo -DNEXUS-GRP-REPO=vprofile_grp_repo clean test -Dsurefire.suitXmlFiles=testing.xml -X -U, env.SYSTEMROOT=C:\Windows, jdk.debug=release, maven.version=3.9.9, java.specification.vendor=Oracle Corporation, java.version.date=2024-10-15, java.home=C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, env.CHOCOLATEYINSTALL=C:\ProgramData\chocolatey, CENTRAL-REPO=vprofile_cntrl_repo, env.JENKINS_SERVER_COOKIE=fe3814c033d5d81c, env.LOCALAPPDATA=C:\Users\Administrator\AppData\Local, env.USERDOMAIN_ROAMINGPROFILE=EC2AMAZ-OP0DPM3, env.GIT_URL=https://github.com/ssrrandj/vprofile-project.git, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.13+11, env.RUN_ARTIFACTS_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/22/display/redirect?page=artifacts, env.PATH=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven/bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;, env.GIT_BRANCH=origin/seleniumSuite, env.PUBLIC=C:\Users\Public, env.EXEC_DIR=C:\jenkins\workspace\softw-test, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, file.encoding=Cp1252, java.vendor.version=Temurin-17.0.13+11, env.COMPUTERNAME=EC2AMAZ-OP0DPM3, env.HOMEPATH=\Users\Administrator, env.APPDATA=C:\Users\Administrator\AppData\Roaming, project.baseUri=file:/C:/jenkins/workspace/softw-test/, java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\2\, RELEASE-REPO=vprofile_host_repo, java.version=17.0.13, env.WORKSPACE=C:\jenkins\workspace\softw-test, java.vm.specification.name=Java Virtual Machine Specification, env.BUILD_ID=22, env.JOB_NAME=softw-test, native.encoding=Cp1252, java.library.path=C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven/bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;., java.vendor=Eclipse Adoptium, env.ERROR_CODE=0, classworlds.conf=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\bin\m2.conf, java.specification.maintenance.version=1, env.HUDSON_HOME=/var/jenkins_home, sun.io.unicode.encoding=UnicodeLittle, env.RUN_TESTS_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/22/display/redirect?page=tests, env.RUN_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/22/display/redirect, java.vm.specification.version=17, os.name=Windows Server 2022, maven.compiler.source=1.7, user.home=C:\Users\Administrator, maven.build.timestamp=2024-12-03T15:01:08Z, env.ALLUSERSPROFILE=C:\ProgramData, env.SESSIONNAME=RDP-Tcp#0, env.HUDSON_COOKIE=409e36a5-3aff-4184-b161-284dae007e34, env.GIT_PREVIOUS_COMMIT=ad6f4bbda8a079810c7afa67e35d0ca8c53b4579, env.JENKINS_URL=http://172.31.14.109:8080/, path.separator=;, os.version=10.0, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.NODE_NAME=win, java.vm.name=OpenJDK 64-Bit Server VM, env.M2_HOME=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven, env.USERNAME=Administrator, os.arch=amd64, maven.multiModuleProjectDirectory=C:\jenkins\workspace\softw-test, env.AWS_EXECUTION_ENV=EC2, env.MAVEN_PROJECTBASEDIR=C:\jenkins\workspace\softw-test, java.vm.info=mixed mode, sharing, env.FPS_BROWSER_USER_PROFILE_STRING=Default, env.TEMP=C:\Users\ADMINI~1\AppData\Local\Temp\2, java.class.version=61.0, env.BUILD_TAG=jenkins-softw-test-22, sun.jnu.encoding=Cp1252, env.HUDSON_URL=http://172.31.14.109:8080/, env.FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, maven.build.version=Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937), maven.home=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven, env.PROGRAMFILES=C:\Program Files, file.separator=\, java.vm.compressedOopsMode=32-bit, env.CLASSWORLDS_JAR="C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\boot\plexus-classworlds-2.8.0.jar", line.separator=
+, env.PROMPT=$P$G, env.PROCESSOR_REVISION=5507, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 85 Stepping 7, GenuineIntel, env.PROGRAMDATA=C:\ProgramData, user.name=Administrator, env.MAVEN_TERMINATE_CMD=on, env.BUILD_URL=http://172.31.14.109:8080/job/softw-test/22/, env.DRIVERDATA=C:\Windows\System32\Drivers\DriverData, env.JOB_URL=http://172.31.14.109:8080/job/softw-test/, env.SYSTEMDRIVE=C:, env.BUILD_TIMESTAMP=2024-12-03 15:00:50 UTC, env.JVMCONFIG=\.mvn\jvm.config, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.NODE_LABELS=win, env.PROCESSOR_LEVEL=6, env.HOMEDRIVE=C:, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\WindowsPowerShell\Modules, env.TMP=C:\Users\ADMINI~1\AppData\Local\Temp\2, env.RUN_CHANGES_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/22/display/redirect?page=changes, sun.os.patch.level=, maven.compiler.target=1.7, env.LOGONSERVER=\\EC2AMAZ-OP0DPM3, library.jansi.path=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\lib\jansi-native, env.WINDIR=C:\Windows, env.HUDSON_SERVER_COOKIE=fe3814c033d5d81c, env.BUILD_NUMBER=22, env.GIT_PREVIOUS_SUCCESSFUL_COMMIT=bbf2fa88a71d21964231ec55cb584475240503ef, java.class.path=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\boot\plexus-classworlds-2.8.0.jar, surefire.suitXmlFiles=testing.xml, java.vm.vendor=Eclipse Adoptium, env.PROCESSOR_ARCHITECTURE=AMD64, user.variant=, NEXUSPORT=8081, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, maven.conf=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven/conf, env.EFC_5380=1, env.CI=true, sun.java.launcher=SUN_STANDARD, user.country=US, env.USERDOMAIN=EC2AMAZ-OP0DPM3, NEXUSIP=172.31.1.30, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.cpu.endian=little, user.language=en, env.JAVACMD=C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin\java.exe, NEXUS-GRP-REPO=vprofile_grp_repo, env.MAVEN_HOME=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven, env.EC2LAUNCH_TELEMETRY=1, env.WDIR=C:\, env.GIT_COMMIT=954f1471e29b1cdcefc53a6a31447d04cdb9be4c, env.=C:=C:\jenkins\workspace\softw-test, java.runtime.name=OpenJDK Runtime Environment, NEXUS-PASS=admin, project.build.sourceEncoding=UTF-8, env.BUILD_DISPLAY_NAME=#22, env.CHOCOLATEYLASTPATHUPDATE=133775603526170728, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=-DSNAP-REPO=vprofile-snapshot -DNEXUS-PASS=admin -DNEXUSIP=172.31.1.30 -DNEXUSPORT=8081 -DRELEASE-REPO=vprofile_host_repo -DNEXUS-USER=admin -DCENTRAL-REPO=vprofile_cntrl_repo -DNEXUS-GRP-REPO=vprofile_grp_repo clean test -Dsurefire.suitXmlFiles=testing.xml -X -U, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, user.dir=C:\jenkins\workspace\softw-test, SNAP-REPO=vprofile-snapshot, env.WORKSPACE_TMP=C:\jenkins\workspace\softw-test@tmp, java.vm.version=17.0.13+11, env.JOB_BASE_NAME=softw-test}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory C:\jenkins\workspace\softw-test\src\main\resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory C:\jenkins\workspace\softw-test\src\main\resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ devOPS ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for ow2-snapshot (http://repository.ow2.org/nexus/content/repositories/snapshots).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=464400, ConflictMarker.markTime=442100, ConflictMarker.nodeCount=118, ConflictIdSorter.graphTime=82800, ConflictIdSorter.topsortTime=60700, ConflictIdSorter.conflictIdCount=45, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7759100, ConflictResolver.conflictItemCount=72, DfDependencyCollector.collectTime=508621800, DfDependencyCollector.transformTime=8857800}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.0
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile (version managed from default)
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:0.9.10:compile
+[DEBUG]       org.ow2.asm:asm:jar:6.2:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.0-M9:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.8.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:0.9.10
+[DEBUG]   Included: org.ow2.asm:asm:jar:6.2
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0-M9
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.8.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile:default-compile' with basic configurator -->
+[DEBUG]   (f) basedir = C:\jenkins\workspace\softw-test
+[DEBUG]   (f) buildDirectory = C:\jenkins\workspace\softw-test\target
+[DEBUG]   (f) compilePath = [C:\jenkins\workspace\softw-test\target\classes, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar, C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar, C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar, C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar, C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar, C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar, C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar, C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar, C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar, C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar, C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar, C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar, C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar, C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar, C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar, C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\jenkins\workspace\softw-test\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = C:\jenkins\workspace\softw-test\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\jenkins\workspace\softw-test\target\classes
+[DEBUG]   (f) parameters = false
+[DEBUG]   (f) project = MavenProject: DevOPS:devOPS:0.0.1-SNAPSHOT @ C:\jenkins\workspace\softw-test\pom.xml
+[DEBUG]   (f) projectArtifact = DevOPS:devOPS:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@71926a36
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.7
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.7
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding C:\jenkins\workspace\softw-test\target\generated-sources\annotations to compile source roots:
+  C:\jenkins\workspace\softw-test\src\main\java
+[DEBUG] New compile source roots:
+  C:\jenkins\workspace\softw-test\src\main\java
+  C:\jenkins\workspace\softw-test\target\generated-sources\annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: C:\jenkins\workspace\softw-test\src\main\java\DevOPS\devOPS\App.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  C:\jenkins\workspace\softw-test\target\classes
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar
+[DEBUG] Source roots:
+[DEBUG]  C:\jenkins\workspace\softw-test\src\main\java
+[DEBUG]  C:\jenkins\workspace\softw-test\target\generated-sources\annotations
+[DEBUG] Command line options:
+[DEBUG] -d C:\jenkins\workspace\softw-test\target\classes -classpath C:\jenkins\workspace\softw-test\target\classes;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar; -sourcepath C:\jenkins\workspace\softw-test\src\main\java;C:\jenkins\workspace\softw-test\target\generated-sources\annotations; -s C:\jenkins\workspace\softw-test\target\generated-sources\annotations -g -nowarn -target 1.7 -source 1.7 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 1 source file to C:\jenkins\workspace\softw-test\target\classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ devOPS ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.0.2:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.0.2:testResources:default-testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\jenkins\workspace\softw-test\target\test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: DevOPS:devOPS:0.0.1-SNAPSHOT @ C:\jenkins\workspace\softw-test\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\jenkins\workspace\softw-test\src\test\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@71926a36
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {env.NUMBER_OF_PROCESSORS=2, env.USERPROFILE=C:\Users\Administrator, env.CLIENTNAME=DESKTOP-3GU3EQR, java.specification.version=17, sun.cpu.isalist=amd64, env.EXECUTOR_NUMBER=0, sun.arch.data.model=64, env.PROGRAMW6432=C:\Program Files, java.vendor.url=https://adoptium.net/, env.JENKINS_HOME=/var/jenkins_home, NEXUS-USER=admin, env.OS=Windows_NT, env.JOB_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/display/redirect, sun.boot.library.path=C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -DSNAP-REPO=vprofile-snapshot -DNEXUS-PASS=admin -DNEXUSIP=172.31.1.30 -DNEXUSPORT=8081 -DRELEASE-REPO=vprofile_host_repo -DNEXUS-USER=admin -DCENTRAL-REPO=vprofile_cntrl_repo -DNEXUS-GRP-REPO=vprofile_grp_repo clean test -Dsurefire.suitXmlFiles=testing.xml -X -U, env.SYSTEMROOT=C:\Windows, jdk.debug=release, maven.version=3.9.9, java.specification.vendor=Oracle Corporation, java.version.date=2024-10-15, java.home=C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, env.CHOCOLATEYINSTALL=C:\ProgramData\chocolatey, CENTRAL-REPO=vprofile_cntrl_repo, env.JENKINS_SERVER_COOKIE=fe3814c033d5d81c, env.LOCALAPPDATA=C:\Users\Administrator\AppData\Local, env.USERDOMAIN_ROAMINGPROFILE=EC2AMAZ-OP0DPM3, env.GIT_URL=https://github.com/ssrrandj/vprofile-project.git, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.13+11, env.RUN_ARTIFACTS_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/22/display/redirect?page=artifacts, env.PATH=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven/bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;, env.GIT_BRANCH=origin/seleniumSuite, env.PUBLIC=C:\Users\Public, env.EXEC_DIR=C:\jenkins\workspace\softw-test, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, file.encoding=Cp1252, java.vendor.version=Temurin-17.0.13+11, env.COMPUTERNAME=EC2AMAZ-OP0DPM3, env.HOMEPATH=\Users\Administrator, env.APPDATA=C:\Users\Administrator\AppData\Roaming, project.baseUri=file:/C:/jenkins/workspace/softw-test/, java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\2\, RELEASE-REPO=vprofile_host_repo, java.version=17.0.13, env.WORKSPACE=C:\jenkins\workspace\softw-test, java.vm.specification.name=Java Virtual Machine Specification, env.BUILD_ID=22, env.JOB_NAME=softw-test, native.encoding=Cp1252, java.library.path=C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven/bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\cfn-bootstrap\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;., java.vendor=Eclipse Adoptium, env.ERROR_CODE=0, classworlds.conf=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\bin\m2.conf, java.specification.maintenance.version=1, env.HUDSON_HOME=/var/jenkins_home, sun.io.unicode.encoding=UnicodeLittle, env.RUN_TESTS_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/22/display/redirect?page=tests, env.RUN_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/22/display/redirect, java.vm.specification.version=17, os.name=Windows Server 2022, maven.compiler.source=1.7, user.home=C:\Users\Administrator, maven.build.timestamp=2024-12-03T15:01:11Z, env.ALLUSERSPROFILE=C:\ProgramData, env.SESSIONNAME=RDP-Tcp#0, env.HUDSON_COOKIE=409e36a5-3aff-4184-b161-284dae007e34, env.GIT_PREVIOUS_COMMIT=ad6f4bbda8a079810c7afa67e35d0ca8c53b4579, env.JENKINS_URL=http://172.31.14.109:8080/, path.separator=;, os.version=10.0, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.NODE_NAME=win, java.vm.name=OpenJDK 64-Bit Server VM, env.M2_HOME=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven, env.USERNAME=Administrator, os.arch=amd64, maven.multiModuleProjectDirectory=C:\jenkins\workspace\softw-test, env.AWS_EXECUTION_ENV=EC2, env.MAVEN_PROJECTBASEDIR=C:\jenkins\workspace\softw-test, java.vm.info=mixed mode, sharing, env.FPS_BROWSER_USER_PROFILE_STRING=Default, env.TEMP=C:\Users\ADMINI~1\AppData\Local\Temp\2, java.class.version=61.0, env.BUILD_TAG=jenkins-softw-test-22, sun.jnu.encoding=Cp1252, env.HUDSON_URL=http://172.31.14.109:8080/, env.FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, maven.build.version=Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937), maven.home=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven, env.PROGRAMFILES=C:\Program Files, file.separator=\, java.vm.compressedOopsMode=32-bit, env.CLASSWORLDS_JAR="C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\boot\plexus-classworlds-2.8.0.jar", line.separator=
+, env.PROMPT=$P$G, env.PROCESSOR_REVISION=5507, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 85 Stepping 7, GenuineIntel, env.PROGRAMDATA=C:\ProgramData, user.name=Administrator, env.MAVEN_TERMINATE_CMD=on, env.BUILD_URL=http://172.31.14.109:8080/job/softw-test/22/, env.DRIVERDATA=C:\Windows\System32\Drivers\DriverData, env.JOB_URL=http://172.31.14.109:8080/job/softw-test/, env.SYSTEMDRIVE=C:, env.BUILD_TIMESTAMP=2024-12-03 15:00:50 UTC, env.JVMCONFIG=\.mvn\jvm.config, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.NODE_LABELS=win, env.PROCESSOR_LEVEL=6, env.HOMEDRIVE=C:, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\WindowsPowerShell\Modules, env.TMP=C:\Users\ADMINI~1\AppData\Local\Temp\2, env.RUN_CHANGES_DISPLAY_URL=http://172.31.14.109:8080/job/softw-test/22/display/redirect?page=changes, sun.os.patch.level=, maven.compiler.target=1.7, env.LOGONSERVER=\\EC2AMAZ-OP0DPM3, library.jansi.path=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\lib\jansi-native, env.WINDIR=C:\Windows, env.HUDSON_SERVER_COOKIE=fe3814c033d5d81c, env.BUILD_NUMBER=22, env.GIT_PREVIOUS_SUCCESSFUL_COMMIT=bbf2fa88a71d21964231ec55cb584475240503ef, java.class.path=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven\boot\plexus-classworlds-2.8.0.jar, surefire.suitXmlFiles=testing.xml, java.vm.vendor=Eclipse Adoptium, env.PROCESSOR_ARCHITECTURE=AMD64, user.variant=, NEXUSPORT=8081, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, maven.conf=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven/conf, env.EFC_5380=1, env.CI=true, sun.java.launcher=SUN_STANDARD, user.country=US, env.USERDOMAIN=EC2AMAZ-OP0DPM3, NEXUSIP=172.31.1.30, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.cpu.endian=little, user.language=en, env.JAVACMD=C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin\java.exe, NEXUS-GRP-REPO=vprofile_grp_repo, env.MAVEN_HOME=C:\jenkins\tools\hudson.tasks.Maven_MavenInstallation\my-maven, env.EC2LAUNCH_TELEMETRY=1, env.WDIR=C:\, env.GIT_COMMIT=954f1471e29b1cdcefc53a6a31447d04cdb9be4c, env.=C:=C:\jenkins\workspace\softw-test, java.runtime.name=OpenJDK Runtime Environment, NEXUS-PASS=admin, project.build.sourceEncoding=UTF-8, env.BUILD_DISPLAY_NAME=#22, env.CHOCOLATEYLASTPATHUPDATE=133775603526170728, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=-DSNAP-REPO=vprofile-snapshot -DNEXUS-PASS=admin -DNEXUSIP=172.31.1.30 -DNEXUSPORT=8081 -DRELEASE-REPO=vprofile_host_repo -DNEXUS-USER=admin -DCENTRAL-REPO=vprofile_cntrl_repo -DNEXUS-GRP-REPO=vprofile_grp_repo clean test -Dsurefire.suitXmlFiles=testing.xml -X -U, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, user.dir=C:\jenkins\workspace\softw-test, SNAP-REPO=vprofile-snapshot, env.WORKSPACE_TMP=C:\jenkins\workspace\softw-test@tmp, java.vm.version=17.0.13+11, env.JOB_BASE_NAME=softw-test}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory C:\jenkins\workspace\softw-test\src\test\resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory C:\jenkins\workspace\softw-test\src\test\resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ devOPS ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile:default-testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = C:\jenkins\workspace\softw-test
+[DEBUG]   (f) buildDirectory = C:\jenkins\workspace\softw-test\target
+[DEBUG]   (f) compilePath = [C:\jenkins\workspace\softw-test\target\classes, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar, C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar, C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar, C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar, C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar, C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar, C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar, C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar, C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar, C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar, C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar, C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar, C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar, C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar, C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar, C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\jenkins\workspace\softw-test\src\test\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = C:\jenkins\workspace\softw-test\target\generated-test-sources\test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\jenkins\workspace\softw-test\target\test-classes
+[DEBUG]   (f) parameters = false
+[DEBUG]   (f) project = MavenProject: DevOPS:devOPS:0.0.1-SNAPSHOT @ C:\jenkins\workspace\softw-test\pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@71926a36
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.7
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.7
+[DEBUG]   (f) testPath = [C:\jenkins\workspace\softw-test\target\test-classes, C:\jenkins\workspace\softw-test\target\classes, C:\Users\Administrator\.m2\repository\junit\junit\4.11\junit-4.11.jar, C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar, C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar, C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar, C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar, C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar, C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar, C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar, C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar, C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar, C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar, C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar, C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar, C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar, C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar, C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar, C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar, C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar, C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar, C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar, C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar, C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar, C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.2\reportng-1.1.2.jar, C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar, C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar, C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding C:\jenkins\workspace\softw-test\target\generated-test-sources\test-annotations to test-compile source roots:
+  C:\jenkins\workspace\softw-test\src\test\java
+[DEBUG] New test-compile source roots:
+  C:\jenkins\workspace\softw-test\src\test\java
+  C:\jenkins\workspace\softw-test\target\generated-test-sources\test-annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: C:\jenkins\workspace\softw-test\src\test\java\DevOPS\devOPS\AppTest.java
+[DEBUG] Stale source detected: C:\jenkins\workspace\softw-test\src\test\java\DevOPS\devOPS\baseDriver.java
+[DEBUG] Stale source detected: C:\jenkins\workspace\softw-test\src\test\java\DevOPS\devOPS\vprofileHomePageVerification.java
+[DEBUG] Stale source detected: C:\jenkins\workspace\softw-test\src\test\java\DevOPS\devOPS\Variables.java
+[DEBUG] Stale source detected: C:\jenkins\workspace\softw-test\src\test\java\DevOPS\devOPS\vprofileHomePagePO.java
+[DEBUG] Stale source detected: C:\jenkins\workspace\softw-test\src\test\java\DevOPS\devOPS\VProfile_TestSuite.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  C:\jenkins\workspace\softw-test\target\test-classes
+[DEBUG]  C:\jenkins\workspace\softw-test\target\classes
+[DEBUG]  C:\Users\Administrator\.m2\repository\junit\junit\4.11\junit-4.11.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.2\reportng-1.1.2.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar
+[DEBUG]  C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar
+[DEBUG] Source roots:
+[DEBUG]  C:\jenkins\workspace\softw-test\src\test\java
+[DEBUG]  C:\jenkins\workspace\softw-test\target\generated-test-sources\test-annotations
+[DEBUG] Command line options:
+[DEBUG] -d C:\jenkins\workspace\softw-test\target\test-classes -classpath C:\jenkins\workspace\softw-test\target\test-classes;C:\jenkins\workspace\softw-test\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.9.0\selenium-java-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.9.0\selenium-api-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.9.0\selenium-chrome-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.9.0\selenium-chromium-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.0\selenium-json-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.9.0\selenium-manager-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.9.0\selenium-devtools-v110-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.9.0\selenium-devtools-v111-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v112\4.9.0\selenium-devtools-v112-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.9.0\selenium-devtools-v85-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.9.0\selenium-edge-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.9.0\selenium-firefox-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.0\selenium-http-4.9.0.jar;C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.9.0\selenium-ie-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.9.0\selenium-remote-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.91.Final\netty-buffer-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.91.Final\netty-codec-http-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.91.Final\netty-codec-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.91.Final\netty-handler-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.91.Final\netty-common-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.91.Final\netty-transport-classes-epoll-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.91.Final\netty-transport-classes-kqueue-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.91.Final\netty-transport-native-epoll-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.91.Final\netty-transport-native-kqueue-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.91.Final\netty-transport-native-unix-common-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.91.Final\netty-transport-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.91.Final\netty-resolver-4.1.91.Final.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.25.0\opentelemetry-api-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.25.0\opentelemetry-context-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.25.0\opentelemetry-exporter-logging-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.25.0\opentelemetry-sdk-metrics-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.25.0-alpha\opentelemetry-sdk-logs-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.25.0-alpha\opentelemetry-api-logs-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.25.0-alpha\opentelemetry-api-events-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.25.0\opentelemetry-sdk-common-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.25.0\opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.25.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.25.0\opentelemetry-sdk-trace-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.25.0\opentelemetry-sdk-1.25.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.9.0\selenium-safari-driver-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.9.0\selenium-support-4.9.0.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.2\reportng-1.1.2.jar;C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar; -sourcepath C:\jenkins\workspace\softw-test\src\test\java;C:\jenkins\workspace\softw-test\target\generated-test-sources\test-annotations; -s C:\jenkins\workspace\softw-test\target\generated-test-sources\test-annotations -g -nowarn -target 1.7 -source 1.7 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 6 source files to C:\jenkins\workspace\softw-test\target\test-classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] -------------------------------------------------------------
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /C:/jenkins/workspace/softw-test/src/test/java/DevOPS/devOPS/vprofileHomePagePO.java:[8,29] package org.apache.commons.io does not exist
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.805 s
+[INFO] Finished at: 2024-12-03T15:01:13Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile (default-testCompile) on project devOPS: Compilation failure
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /C:/jenkins/workspace/softw-test/src/test/java/DevOPS/devOPS/vprofileHomePagePO.java:[8,29] package org.apache.commons.io does not exist
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile (default-testCompile) on project devOPS: Compilation failure
+/C:/jenkins/workspace/softw-test/src/test/java/DevOPS/devOPS/vprofileHomePagePO.java:[8,29] package org.apache.commons.io does not exist
+
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:333)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+/C:/jenkins/workspace/softw-test/src/test/java/DevOPS/devOPS/vprofileHomePagePO.java:[8,29] package org.apache.commons.io does not exist
+
+    at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute (AbstractCompilerMojo.java:1215)
+    at org.apache.maven.plugin.compiler.TestCompilerMojo.execute (TestCompilerMojo.java:181)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Hmhr9dnpe6gEu+IhZ9Or7ftMzlCGhpyoiUKt2P0Ys8SAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[DEBUG] Shutting down adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gav, file-hgav, file-static, gav, static]
+[DEBUG] Shutting down 'file-lock' factory
+[DEBUG] Shutting down 'rwlock-local' factory
+[DEBUG] Shutting down 'semaphore-local' factory
+[DEBUG] Shutting down 'noop' factory
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Slack Notifications] found #21 as previous completed, non-aborted build
+[Slack Notifications] will send OnEveryFailureNotification because build matches and user preferences allow it
+Finished: FAILURE

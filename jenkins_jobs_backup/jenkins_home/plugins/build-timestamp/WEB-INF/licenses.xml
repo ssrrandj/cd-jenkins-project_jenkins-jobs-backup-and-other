@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='build-timestamp' version='1.0.4'><l:dependency name='Build Timestamp Plugin' groupId='org.jenkins-ci.plugins' artifactId='build-timestamp' version='1.0.4' url='https://github.com/jenkinsci/build-timestamp-plugin'><l:description>The Jenkins Plugins Parent POM Project</l:description></l:dependency></l:dependencies>

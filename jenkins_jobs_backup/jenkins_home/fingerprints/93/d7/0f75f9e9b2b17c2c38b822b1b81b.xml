@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-12-01 19:05:44.236 UTC</timestamp>
+  <original>
+    <name>Build</name>
+    <number>12</number>
+  </original>
+  <md5sum>93d70f75f9e9b2b17c2c38b822b1b81b</md5sum>
+  <fileName>vprofile-v2.war</fileName>
+  <usages>
+    <entry>
+      <string>Deploy_to_Stagging</string>
+      <ranges>5-6</ranges>
+    </entry>
+    <entry>
+      <string>Build</string>
+      <ranges>12</ranges>
+    </entry>
+    <entry>
+      <string>Artifact_Upload</string>
+      <ranges>4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

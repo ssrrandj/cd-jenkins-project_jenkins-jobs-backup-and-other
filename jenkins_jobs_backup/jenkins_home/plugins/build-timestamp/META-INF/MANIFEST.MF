@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Build Timestamp Plugin
+Specification-Version: 1.0
+Implementation-Title: Build Timestamp Plugin
+Implementation-Version: 1.0.4
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: build-timestamp
+Short-Name: build-timestamp
+Long-Name: Build Timestamp Plugin
+Url: https://github.com/jenkinsci/build-timestamp-plugin
+Plugin-Version: 1.0.4
+Hudson-Version: 2.440.3
+Jenkins-Version: 2.440.3
+Plugin-Dependencies: structs:338.v848422169819
+Plugin-Developers: Hao CHEN:orctom:orctom@gmail.com
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/build-timesta
+ mp-plugin
+Plugin-ScmTag: build-timestamp-1.0.4
+Plugin-ScmUrl: https://github.com/jenkinsci/build-timestamp-plugin
+Plugin-GitHash: fd7a29418fd15d3e561326a186e3d32fa42bc35a
+Implementation-Build: fd7a29418fd15d3e561326a186e3d32fa42bc35a
+

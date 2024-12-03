@@ -1,0 +1,37 @@
+Started by upstream project "[8mha:////4Gk1tk8Dg6MYs4HFcWIa89KayHwF7ZqsWXkAELnz2+SUAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/az8JP3g/LzEovjg5MS8vNQifQBGFnpuyAAAAA==[0mSonar_Scanner" build number [8mha:////4KoB5cH8qAJsAGeFT1pXv146sKP+aP/Gds3coCWiRdjgAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZR/az8JP3g/LzEovjg5MS8vNQifWMzAGHkVbjKAAAA[0m36
+originally caused by:
+ Started by upstream project "[8mha:////4JtS8zdsi3QXHm6Bz++v5vmqc1y/bNYly94vyIbcV12YAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JH3PvJLUovSixJLM/LyQ1OISfQAZsupCywAAAA==[0mIntergrationTest" build number [8mha:////4G0RtL1n43IZLmFJFVOZb+W1YninaexdSQy3mjk77/dXAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBnH9rPwkfc+8ktSi9KLEksz8vJDU4hJ9SwDE8PNYzAAAAA==[0m9
+ originally caused by:
+  Started by upstream project "[8mha:////4OlQBJNRUh2b6B6HMKzSDUYENdcjNSEvW2c0SSDfuN2SAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JP2Q1OISfQCjfsn8vwAAAA==[0mTest" build number [8mha:////4IOGeL6nAJO8DVwud84GcTNvOxVv5fntV8frAdvXWqoaAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBm79rPwk/ZDU4hJ9CwDbngEdwAAAAA==[0m8
+  originally caused by:
+   Started by upstream project "[8mha:////4ALhLjqpcMVplCEjZ0glJ1epMrnc3rvyo0tUQLFiIK47AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/az8JH2n0sycFH0Ahtvdn8AAAAA=[0mBuild" build number [8mha:////4GjnrZhysyIdjByerz0zTbAXSNpzG8X5JJQP1ZdeRYeKAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZe/az8JH2n0sycFH1DYwDq6NycwgAAAA==[0m13
+   originally caused by:
+    Started by user [8mha:////4H7tH4cGm0Ac/AiihKrLIwEd2nXJxwrCez+DjY5r60J0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Artifact_Upload
+Copied 1 artifact from "[8mha:////4NJ/kPnD4eSU9wD5m4Qn3ZAiszvVgenCuZUJSWaSbPXkAAAAjB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgLWHg1s/KT9J3Ks3MSdEHAAe++oiQAAAA[0mBuild" build number [8mha:////4C8b/H8QFlFhDNY6IierHz+L2NBGr9KoN6UiB3M4ECgVAAAAjx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmHg08/KT9J3Ks3MSdE3NNYHAAo0mnWTAAAA[0m13
+Uploading artifact vprofile-v2.war started....
+GroupId: QA
+ArtifactId: 2024-12-01 19.16.18
+Classifier: 
+Type: war
+Version: V5
+File: vprofile-v2.war
+Repository:vprofile_host_repo
+Uploading: http://172.31.1.30:8081//repository/vprofile_host_repo/QA/2024-12-01 19.16.18/V5/2024-12-01 19.16.18-V5.war
+10 % completed (5.3 MB / 48 MB).
+20 % completed (10 MB / 48 MB).
+30 % completed (15 MB / 48 MB).
+40 % completed (20 MB / 48 MB).
+50 % completed (25 MB / 48 MB).
+60 % completed (29 MB / 48 MB).
+70 % completed (34 MB / 48 MB).
+80 % completed (39 MB / 48 MB).
+90 % completed (44 MB / 48 MB).
+100 % completed (48 MB / 48 MB).
+Uploaded: http://172.31.1.30:8081//repository/vprofile_host_repo/QA/2024-12-01 19.16.18/V5/2024-12-01 19.16.18-V5.war (48 MB at 39 MB/s)
+Uploading artifact vprofile-v2.war completed.
+[Slack Notifications] found #4 as previous completed, non-aborted build
+[Slack Notifications] will send OnSuccessNotification because build matches and user preferences allow it
+Triggering a new build of [8mha:////4Pg5Q7l9+Ehq+o640nE8+6t2mryOOLpthI9MnD3szvbcAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/az8JH2X1IKc/Mr4kvz44JLE9HSgSfoA68zfF80AAAA=[0mDeploy_to_Stagging
+Finished: SUCCESS
